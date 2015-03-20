@@ -36,7 +36,6 @@ def main():
     tabs = 0
     for line in lines:
         line = line.strip()
-        print(unindent(line))
         tabs = tabs + unindent(line)
         line = ("\t" * tabs) + line
         out.append(line)
